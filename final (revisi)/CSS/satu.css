@@ -21,6 +21,7 @@ a {
     padding: 0 .25rem;
     margin: 0 -.25rem;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    align-content: center;
 }
 a:hover {
     color: #fff;
@@ -31,4 +32,11 @@ a:hover {
       width: 100%;
       height: auto;
     }
+}
+.grid-container{
+    display: inline-grid;
+    gap: 10px;
+}
+.grid-center{
+    padding-left: 400px;
 }

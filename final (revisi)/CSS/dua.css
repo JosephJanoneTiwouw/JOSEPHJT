@@ -2,9 +2,11 @@ body{
     font-family: Verdana;
     color:teal;
     background-color:whitesmoke;
+    display: grid;
 }
 div{
     font-family: cursive;
+    padding: 0 5em;
 }
 h1,h2{
     font-family: cursive;
@@ -15,7 +17,7 @@ p{
 iframe{
     padding-left: 250px;
 }
-a {
+a{
     box-shadow: inset 0 0 0 0 #54b3d6;
     color: #54b3d6;
     padding: 0 .25rem;
@@ -26,6 +28,12 @@ a:hover {
     color: #fff;
     box-shadow: inset 200px 0 0 0 #54b3d6;;
 }
+@media (max-width: 1080px) {
+    h1,h2,p {
+      width: 100%;
+      height: auto;
+    }
+}
 @media (max-width: 600px) {
     h1,h2,p {
       width: 100%;
@@ -33,18 +41,16 @@ a:hover {
     }
 }
 input[type='radio'] {
-    width: 20px;
-    height: 20px;
+    width: 17px;
+    height: 17px;
     border: 2px solid #747474;
-    border-radius: 50%;
-    outline: none;
-    opacity: 0.6;
+    border-radius: 25%;
     transition: 0.3s;
 }
 input[type='radio']:hover:before {
     box-shadow: 0px 0px 0px 12px rgba(80, 80, 200, 0.2);
-    border-radius: 50%;
-    opacity: 1;
+    border-radius: 25%;
+    
 } 
 input[type='radio']:before {
     content: '';
@@ -69,4 +75,21 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
+.grid-center{
+    padding-left: 25em;
+}
+.judul{
+    padding-left: 10em;
+}
+.tengah{
+    padding-left: 550px;
+}
+.bawah{
+    padding-left: 10em;
+}
+.atas{
+    padding-left: 5em;
+}
+.foot{
+    padding: 5em;
+}
